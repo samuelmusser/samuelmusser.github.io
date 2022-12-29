@@ -14,7 +14,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="electricthrees.html" class="logo">Electric Three's (WIP)</a>
+						<a href="electricthrees.html" class="logo">Electric Three's</a>
 					</header>
 
 				<!-- Nav -->
@@ -36,12 +36,32 @@
 
 						<!-- Post -->
 							<section class="post">
-								<header class="major">
-									<h1>electronics header</h1>
-									<p>Stuff about project</p>
-								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Paragraph about project herereeeeeeeeeeeeeeeeeee</p>
+								<div class="image main"><img src="images/pic04.png" alt="" /></div>
+								<ul class="actions">
+									<li><a href="/reports/ThreeInARowReport.pdf" class="button primary">Full Report</a></li>
+								</ul>
+								<div class="box">
+									<p>Electric three's contains a three by three matrix of LED's consisting of two colors per space,
+										one for player one and another for player two. Each space within the matrix will have two
+										buttons, and each button pertains to a player's color. The game will have an on switch which
+										powers the board and a start switch to trigger one or more 555-timers. Once turned on,
+										photoresistors will take in the lighting of the room to account for how brightly the LED's should
+										be lit when activated. Meaning if it's a dark room then they will not be as bright. If the room is
+										brightly lit then the LED's will be too, so they are easier to see. Underneath the board of LED's
+										will be a complex underlay of logic pertaining to the specific buttons pushed. This will be done
+										using MOSFET's and will include AND, NAND, and XOR logic. This is in order to have a
+										winner but also to avoid two players choosing the same space. The AND logic will account for
+										the winner while also triggering a reset on the 555-timer that the system will depend on. Each
+										row, column, and the two diagonals will have AND connections that will link them to the reset,
+										so there would be 16 combinations of LED's lighting up that would trigger the reset for the
+										timer. If the game comes to a draw, then this will trigger the NAND gates for all combinations
+										that will also reset the game. When there is a winner or a draw, the logic will also result in a
+										temporary LED turning on that will represent the winning player's color or the draw of the game
+										before resetting. <br><br>
+
+									Hardware: 555 Timers, BS170, Pushbutton, flip switch, LEDs (y,g,r), Resistors, photo-resistors, capacitors. <br>
+									</p>
+								</div>
 							</section>
 
 					</div>
